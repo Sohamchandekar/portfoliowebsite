@@ -1,0 +1,110 @@
+/* Body styling */
+
+body {
+    background: 
+    linear-gradient(to right, #868f96 0%, #596164 100%);
+    background-blend-mode: overlay, overlay;
+    /* Fix the background to cover the entire viewport */
+    background-attachment: 
+    /* Set the default text color to ensure readability */
+    color: #ffffff;
+}
+/* Style for tab buttons */
+.tab-buttons {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    display: flex;
+    flex-direction: row; /* Arrange buttons horizontally */
+}
+
+/* Style for individual button */
+.tab-buttons a {
+    text-decoration: none;
+    color: #fcf8f8;
+    background-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1.5vh 2.5vw; /* Use viewport units for padding */
+    margin-right: 2vw; /* Add gap between buttons using viewport units */
+}
+
+/* Style for hover effect */
+.tab-buttons a:hover {
+    background-color: #7a7272;
+}
+
+/* Style for page body */
+.page-body {
+    position: fixed;
+    left: 5vw; /* Set distance from left of the screen using viewport units */
+    right: 5vw; /* Set distance from right of the screen using viewport units */
+    top: 13vh; /* Align with the top of the screen using viewport units */
+    bottom: 13vh; /* Add space at the bottom of the screen using viewport units */
+    display: flex;
+    box-shadow: 4.0px 9.0px 9.0px hsla(0, 3%, 19%, 40%);
+    /* background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%); */
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+    border-radius: 2vh; /*Rounded corners using viewport units */
+    overflow: hidden;
+    transform: scale(0.95); /* Apply a scale transformation for the 3D effect */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+
+}
+
+.page-body:hover {
+    transform: scale(1); /* Scale up on hover for more pronounced effect */
+}
+
+/* Divide page-body into two parts */
+.main-mat {
+    flex: 1; /* Take up all available space */
+    display: flex; /* Use flexbox for layout */
+}
+
+/* Left part */
+.introduction {
+    width: 55%; /* 55% width for the left part */
+    padding: 4vh; /* Add padding using viewport units */
+    color: rgb(17, 17, 17);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Align content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: left;
+}
+/* Style for labels */
+.introduction label {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0; /* Remove default margin */
+    margin-bottom: 1px; /* Adjust margin between labels */
+}
+
+
+/* Right part */
+.my-image {
+    flex: 1; /* Take remaining space */
+    padding: 0vh; /* Add padding using viewport units */
+}
+
+/* Image styling */
+.my-image img {
+    max-width: 100%; /* Ensure image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.social-logo {
+    position: fixed;
+    bottom: 1rem;
+    left: 4rem;
+}
+
+.social-logo a {
+    display: inline-block;
+    margin-right: 2rem; /* Adjust margin between icons */
+}
+
+.social-logo img {
+    width: 35px; /* Set the width of the icons */
+    height: auto; /* Maintain aspect ratio */
+}
